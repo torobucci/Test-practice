@@ -1,4 +1,4 @@
- function stringLength(str) {
+function stringLength(str) {
   if(!str.length>0){
     throw ("You haven't inputed any character")
   }
@@ -7,4 +7,12 @@
   }
   return str.split("").length;
 }
-module.exports = stringLength;
+function reverseString(str){
+  let newStr = ''
+  for(let i=str.length-1;i>=0;i--){
+    newStr+=str[i]
+  }
+  
+  return newStr
+  }
+module.exports = {stringLength,reverseString};

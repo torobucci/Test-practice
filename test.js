@@ -1,4 +1,4 @@
-const stringLength = require('./functions.js');
+const {stringLength,reverseString} = require('./functions.js');
 
   test('no input', () => {
     expect(()=>stringLength('')).toThrow("You haven't inputed any character");
@@ -8,5 +8,8 @@ const stringLength = require('./functions.js');
   });
   test('return str length', () => {
     expect(stringLength('Christoph')).toBe(9);
+  });
+  test('return reversed string length', () => {
+    expect(reverseString('Christoph')).toBe('hpotsirhC');
   });
  
