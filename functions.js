@@ -15,4 +15,28 @@ function reverseString(str){
   
   return newStr
   }
-module.exports = {stringLength,reverseString};
+  class Calculator{
+    add(a,b){
+     return a + b
+    }
+    subtract(a,b){
+      return a-b
+    }
+    divide(a,b){
+      return a/b
+    }
+    multiply(a,b){
+      return a*b
+    }
+  }
+  const calc = new Calculator
+  function capitalize(str){
+    if(typeof(arguments[0])!=='string'){
+      throw('argument should be a string')
+    }
+    else{
+      return str[0].toUpperCase()+str.slice(1)
+    }
+    
+   }
+module.exports = {stringLength,reverseString,calc,capitalize};
